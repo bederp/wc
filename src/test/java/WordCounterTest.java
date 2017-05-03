@@ -3,12 +3,9 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by kinder112 on 03.05.2017.
- */
 public class WordCounterTest {
 
-    WordCounter wordCounter;
+    private WordCounter wordCounter;
 
     @Before
     public void setUp() throws Exception {
@@ -39,6 +36,7 @@ public class WordCounterTest {
 
         assertEquals(2, count);
     }
+
     @Test
     public void shouldReturn2WhenWordOccursTwiceInSentenceIngoringCase() throws Exception {
         wordCounter.count("Ala ma kota ala");
